@@ -1,5 +1,6 @@
 require 'csv'
 
+
 #open csv file
 CSV.open('test.csv','wb') do |csv|
   csv << ['stock',"Sales","Day"]
