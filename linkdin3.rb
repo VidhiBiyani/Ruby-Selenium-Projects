@@ -19,8 +19,8 @@ driver.manage.window.maximize
 sleep 6
 #driver.manage.timeouts.implicit_wait = 10
 
-driver.find_element(:id,"username").send_keys "Manisha23.es@gmail.com"
-driver.find_element(:id,"password").send_keys "manisha@2345"
+driver.find_element(:id,"username").send_keys ""
+driver.find_element(:id,"password").send_keys ""
 driver.find_element(:xpath,"//button[contains(text(),'Sign in')]").click
 #driver.find_element(:xpath,"//button[text()='Sign in']").click
 
