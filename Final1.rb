@@ -1,9 +1,12 @@
+#load the web driver to interact with selenium 
 require 'selenium-webdriver'
 require "test/unit/assertions"
 include Test::Unit::Assertions
+#start the browser
 driver = Selenium::WebDriver.for :chrome
 # driver = Selenium::WebDriver.for :Chrome.driver_path="C:\Ruby26-x64\bin\chromedriver.exe"
 
+#explicitly wait
 wait = Selenium::WebDriver::Wait.new(:timeout => 10)
 
 def document_initialised(driver)
@@ -21,6 +24,8 @@ search_form = driver.find_element(:css,"input[name='q']").text
 
 #Maximize Chrome Browser
 driver.manage.window.maximize
+
+#explicitly wait 
 driver.manage.timeouts.implicit_wait = 8
 
 # Enter text into the  Chrome Browser
