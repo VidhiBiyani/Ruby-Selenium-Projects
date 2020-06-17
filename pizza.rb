@@ -38,8 +38,6 @@ end
 
 
 
-
-
 =begin
 i=1
 for i in 1..32
