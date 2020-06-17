@@ -47,6 +47,7 @@ sleep 2
 elem.submit
 
 
+
 #get the  text
 johny=driver.find_element(:xpath,"//div[@class='col col-md-12']").text
 puts"#{johny}"
